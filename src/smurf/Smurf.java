@@ -16,13 +16,17 @@ package smurf;
 public class Smurf {
 	String color="blue";
 	String gender="boy";
+	public void setName(String name) {
+		this.name=name;
+	}
 public static void main(String[] args) {
 	Smurf Billy=new Smurf("Billy");
 	Billy.eat();
 	System.out.println("Billy");
 	
 	Smurf Papa=new Smurf("Papa");
-	System.out.println(Papa);
+	Papa.setName("Papa");
+	System.out.println("Papa");
 Papa.setHatColor("red");
 System.out.println("red");
 Papa.setGirlOrBoy("Boy");
@@ -35,6 +39,7 @@ System.out.println("Boy");
 	Smurfette.setGirlOrBoy("Girl");
 	System.out.println("Girl");
 }
+	
 	private String name;
 
 	Smurf(String name) {
