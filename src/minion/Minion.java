@@ -5,7 +5,12 @@ public class Minion {
 		private int eyes;
 		private String color;
 		private String master;
-		Minion minion=new Minion();
+		Minion(String name, int eyes, String color, String master){
+			this.name=name;
+			this.eyes=eyes;
+			this.color=color;
+			this.master=master;
+		}
 			String getName() {
 				return this.name;
 			}
